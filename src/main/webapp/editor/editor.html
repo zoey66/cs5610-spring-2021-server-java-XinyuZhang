@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="editor.css" rel="stylesheet"/>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -9,83 +10,109 @@
     <title>course editor</title>
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">CS5610 - WebDev</a>
+
+
+        <nav class="navbar navbar-expand-lg sticky-top wbdv-sticky-nav-bar bg-secondary ">
+            <div class="container-fluid ">
+                <div class="col-4">
+                    <div class="navbar-header">
+                        <i class="far fa-times fa-1.5x"></i>
+                            CS5610 - WebDev</a>
+                    </div>
                 </div>
 
-                <div class="collapse navbar-collapse">
-                    <ul class="nav nav-pills">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Build</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pages</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Theme</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Store</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Apps</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Settings</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="far fa-plus-square"></i>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="col-8">
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav nav-pills p-3">
+                            <li class="nav-item ">
+                                <a class="nav-link btn-secondary " aria-current="page" href="#">Build</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active btn-secondary " href="#">Pages</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link btn-secondary" href="#">Theme</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link btn-secondary" href="#">Store</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link btn-secondary" href="#">Apps</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link btn-secondary" href="#">Settings</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link btn-secondary" href="#">
+                                    <i class="far fa-plus-square 1.5"></i>
+                                </a>
+                            </li>
+                        </ul>
 
+                    </div>
                 </div>
-
             </div>
     </nav>
 
-    <div class="container">
-
-    </div>
         <div class="row">
             <div class="col-4">
-                <ul class="list-group">
-                    <li class="list-group-item">Module 1-jQuery</li>
-                    <li class="list-group-item">Module 2-React</li>
-                    <li class="list-group-item">Module 3-Redux</li>
-                    <li class="list-group-item">Module 4-Native</li>
-                    <li class="list-group-item">Module 5-Angular</li>
-                    <li class="list-group-item">Module 6-Node</li>
-                    <li class="list-group-item">Module 7-Mongo</li>
+                <ul class="list-group side_bar">
+                    <li class="list-group-item list-group-item-dark ">
+                        Module 1-jQuery
+                        <i class="far fa-times"></i>
+                    </li>
+                    <li class="list-group-item list-group-item-dark">
+                        Module 2-React
+                        <i class="far fa-times"></i>
+                    </li>
+                    <li class="list-group-item list-group-item-dark">
+                        Module 3-Redux
+                        <i class="far fa-times"></i>
+                    </li>
+                    <li class="list-group-item list-group-item-dark">
+                        Module 4-Native
+                        <i class="far fa-times"></i>
+                    </li>
+                    <li class="list-group-item list-group-item-dark">
+                        Module 5-Angular
+                        <i class="far fa-times"></i>
+                    </li>
+                    <li class="list-group-item list-group-item-dark">
+                        Module 6-Node
+                        <i class="far fa-times"></i>
+                    </li>
+                    <li class="list-group-item list-group-item-dark">
+                        Module 7-Mongo
+                        <i class="far fa-times"></i>
+                    </li>
                 </ul>
             </div>
 
             <div class="col-8">
+                <br/>
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Topic1</a>
+                        <a class="nav-link btn-secondary" href="#">Topic1</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active btn-secondary" href="#">Topic2</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link btn-secondary" href="#">Topic3</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Topic2</a>
+                        <a class="nav-link btn-secondary" href="#">Topic4</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Topic3</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Topic4</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="far fa-plus-square"></i>
+                    <li class="nav-item ">
+                        <a class="nav-link btn-secondary" href="#">
+                            <i class="far fa-plus-square fa-1.2x"></i>
                         </a>
                     </li>
                 </ul>
             </div>
 
         </div>
+
 
 
 
