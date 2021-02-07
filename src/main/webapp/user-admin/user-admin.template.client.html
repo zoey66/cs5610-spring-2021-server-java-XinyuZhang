@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href=
+            "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href=
+            "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href='user-admin.style.client.css' rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+          crossorigin="anonymous"/>
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <link rel="stylesheet" href="user-admin.style.client.css"/>
+    <script src="../user-admin/user.service.client.js"></script>
+    <script src="user-admin.controller.client.js"></script>
+    <title>User Amin</title>
+</head>
+<body>
+
+<tr class="wbdv-form">
+    <td><input id="usernasmeFld" class="form-control"
+        placeholder="Username" /></td>
+    <td><input id="passwordFld" class="form-control"
+               placeholder="Password" /></td>
+    <td><input id="firstNamefLD" class="'form-control"
+               placeholder="First Name" /></td>
+    <td><input id="lastNamefLD" class="'form-control"
+               placeholder="Last Name" /></td>
+    <td><select id ="roleFld" class="form-control">
+        <option value="FACULTY">Faculty</option>
+        <option value="STUDENT">Student</option>
+        <option value="ADMIN">Admin</option>
+    </select></td>
+    <td><span class="float-right" style="white-space: nowrap">
+        <i class="fa-2x fa fa-plus wbdv-create"></i>
+        <i class="fa -2x fa fa-check wbdv-update"></i>
+    </span></td>
+    <tbody class="wbdv=tbody">
+        <tr class="wbdv-template wbdv-user wbdv-hidden">
+            <td class="wbdv-username">zoey</td>
+            <td>&nbsp;</td>
+            <td class="wbdv-first-name">Zoey</td>
+            <td class="wbdv-last-name">LoveLace</td>
+            <td class="wbdv-role">FACULTY</td>
+            <td class="wbdv-actions">
+                <span class="float-right">
+                    <i class="fa-2x fa fa-times wbdv-remove"></i>
+                    <i class="fa-2x fa fa-pencil wbdv-edit"></i>
+                </span>
+            </td>
+        </tr>
+    </tbody>
+
+</tr>
+
+</body>
+</html>
