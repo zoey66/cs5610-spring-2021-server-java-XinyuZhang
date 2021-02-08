@@ -29,6 +29,11 @@ function main(){
             lastname:$lastNameFld.val(),
             role:$roleFld.val()
         })
+        $usernameFld.val('')
+        $passwordFld.val('')
+        $firstNameFld.val('')
+        $lastNameFld.val('')
+        $roleFld.val('')
     })
 
     $updateBtn.click(updateUser)
@@ -98,6 +103,11 @@ function updateUser(){
             users[index]=selectedUser
             renderUsers(users)
     })
+    $usernameFld.val('')
+    $passwordFld.val('')
+    $firstNameFld.val('')
+    $lastNameFld.val('')
+    $roleFld.val('')
 }
 
 
