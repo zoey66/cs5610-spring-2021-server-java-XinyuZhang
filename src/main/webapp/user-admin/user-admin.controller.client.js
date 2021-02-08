@@ -84,6 +84,7 @@ function selectUser(event){
 }
 
 
+
 function updateUser(){
     console.log(selectedUser)
     selectedUser.username=$usernameFld.val()
