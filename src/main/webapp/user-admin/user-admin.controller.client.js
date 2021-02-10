@@ -124,8 +124,8 @@ function renderUsers(users) {
         <td>${user.lastname}</td>
         <td>${user.role}</td>
         <td>
-            <button class="wbdv-delete" id="${i}"><i class="fa-2x fa fa-times"></i></button>
-            <button class="wbdv-select" id="${user._id}"><i class="fa-2x fa fa-pencil"></i></button>
+            <button class="wbdv-select float-right" id="${user._id}"><i class="fa-2x fa fa-pencil"></i></button>
+            <button class="wbdv-delete float-right" id="${i}"><i class="fa-2x fa fa-times"></i></button>
         </td>
     </tr>`)
     }
