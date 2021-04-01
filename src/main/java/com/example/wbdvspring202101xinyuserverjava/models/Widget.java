@@ -1,11 +1,63 @@
 package com.example.wbdvspring202101xinyuserverjava.models;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="widgets")
 public class Widget {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private String topicId;
     private String type;
     private Integer size;
+    private Integer width;
+    private Integer height;
     private String text;
-    private String topicId;
+    private String name;
+    private Boolean ordered;
+    private String src;
+
+    public Boolean getOrdered() {
+        return ordered;
+    }
+
+    public void setOrdered(Boolean ordered) {
+        this.ordered = ordered;
+    }
+
+    public String getSrc() {
+        return src;
+    }
+
+    public void setSrc(String src) {
+        this.src = src;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getWidth() {
+        return width;
+    }
+
+    public void setWidth(Integer width) {
+        this.width = width;
+    }
+
+    public Integer getHeight() {
+        return height;
+    }
+
+    public void setHeight(Integer height) {
+        this.height = height;
+    }
 
     public String getTopicId() {
         return topicId;
@@ -52,10 +104,48 @@ public class Widget {
     }
 
     public Widget(Long id, String topicId, String type, Integer size, String text) {
+
+
         this.id = id;
         this.topicId = topicId;
         this.type = type;
         this.size = size;
+        this.width=width;
+        this.height=height;
         this.text = text;
+        this.name=name;
+        this.ordered=ordered;
+        this.src=src;
     }
 }
+
+/*
+    create table widget (
+       id bigint not null,
+        height integer,
+        size integer,
+        text varchar(255),
+        topic_id varchar(255),
+        type varchar(255),
+        width integer,
+        primary key (id)
+    ) engine=InnoDB
+ */
+
+/*
+create table widgets (
+       id bigint not null auto_increment,
+        height integer,
+        size integer,
+        text varchar(255),
+        topic_id varchar(255),
+        type varchar(255),
+        width integer,
+        primary key (id)
+    ) engine=InnoDB
+ */
+
+/*
+    alter table widgets
+       add column name varchar(255)
+ */
