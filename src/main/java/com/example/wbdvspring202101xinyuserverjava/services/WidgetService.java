@@ -47,10 +47,18 @@ public class WidgetService {
     }
     public Integer updateWidget(Long id, Widget newWidget) {
         Widget originalWidget = findWidgetById(id);
+        originalWidget.setId(newWidget.getId());
+        originalWidget.setTopicId(newWidget.getTopicId());
         originalWidget.setType(newWidget.getType());
+        originalWidget.setSize(newWidget.getSize());
+        originalWidget.setWidth(newWidget.getWidth());
+        originalWidget.setHeight(newWidget.getHeight());
         originalWidget.setText(newWidget.getText());
+        originalWidget.setName(newWidget.getName());
         originalWidget.setSrc(newWidget.getSrc());
         originalWidget.setOrdered(newWidget.getOrdered());
+
+
         repository.save(originalWidget);
         return 1;
     }
